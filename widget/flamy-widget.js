@@ -106,8 +106,8 @@
         display: flex;
         align-items: center;
         gap: 14px;
-        min-height: 82px;
-        padding: 16px 14px 14px 104px;
+        min-height: 96px;
+        padding: 18px 14px 16px 128px;
         border-bottom: 1px solid var(--flamy-line);
         border-radius: 8px 8px 0 0;
         background: linear-gradient(90deg, #eef7f5, #fffaf4);
@@ -115,15 +115,15 @@
 
       .header img {
         position: absolute;
-        left: 14px;
-        bottom: 10px;
-        width: 86px;
-        height: 86px;
-        border-radius: 8px;
+        left: 16px;
+        bottom: 8px;
+        width: 108px;
+        height: 108px;
+        border-radius: 999px;
         object-fit: cover;
         border: 4px solid white;
-        box-shadow: 0 16px 32px rgba(29, 36, 51, 0.18);
-        transform: translateY(-16px);
+        box-shadow: 0 18px 38px rgba(29, 36, 51, 0.22);
+        transform: translateY(-22px);
       }
 
       .identity {
@@ -271,14 +271,15 @@
         }
 
         .header {
-          min-height: 76px;
-          padding-left: 92px;
+          min-height: 86px;
+          padding-left: 108px;
         }
 
         .header img {
-          width: 76px;
-          height: 76px;
-          transform: translateY(-12px);
+          width: 92px;
+          height: 92px;
+          border-radius: 999px;
+          transform: translateY(-16px);
         }
       }
     </style>
