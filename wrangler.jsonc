@@ -3,11 +3,17 @@
   "name": "flamy-cmc-chatbot",
   "main": "worker/index.js",
   "compatibility_date": "2025-12-01",
+  "keep_vars": true,
   "assets": {
     "directory": "./dist/public",
     "binding": "ASSETS"
   },
   "vars": {
     "OPENAI_MODEL": "gpt-5.4-mini"
+  },
+  "secrets": {
+    "required": [
+      "OPENAI_API_KEY"
+    ]
   }
 }
