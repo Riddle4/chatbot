@@ -329,21 +329,22 @@ L’École de magie du Centre de Magie de la Côte propose des cours collectifs 
 
 Les cours ne se limitent pas à apprendre des secrets. Ils permettent aux enfants d’apprendre à présenter un effet magique, à raconter une histoire, à se tenir devant un public et à créer un moment d’émerveillement.
 
-Les cours peuvent être proposés sur différents sites et dans certaines écoles partenaires.
+Les cours collectifs ont lieu sur des sites définis. Les cours privés ont lieu principalement à Nyon.
 
-### Sites / lieux possibles
+### Lieux des cours collectifs
 
-- Nyon
+- Genève
+- Nyon, lieu principal du Centre de Magie de la Côte
 - Morges
-- Sion
 - Martigny
-- Genève / écoles partenaires
-- Collège du Léman
-- École Internationale de Genève
-- Mont-Olivet
-- Autres lieux selon collaborations
 
-À vérifier selon l’année scolaire en cours.
+Flamy ne doit pas citer Sion comme lieu de cours collectif, sauf si une future base de connaissance validée l’ajoute explicitement.
+
+### Lieux des cours privés
+
+Les cours privés ont lieu à Nyon.
+
+Pour un autre lieu, Flamy doit répondre : « Les cours privés ont lieu à Nyon. Pour un autre lieu, le mieux est de nous consulter afin que l’équipe vérifie ce qui est possible. »
 
 ### Cible
 
