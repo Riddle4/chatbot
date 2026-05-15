@@ -33,35 +33,35 @@
 
       @keyframes flamy-float {
         0%, 100% {
-          transform: translateY(-22px) rotate(-1deg);
+          transform: translateY(0) rotate(-1deg) scale(1.08);
         }
 
         50% {
-          transform: translateY(-30px) rotate(1.5deg);
+          transform: translateY(-7px) rotate(1.5deg) scale(1.1);
         }
       }
 
       @keyframes flamy-mobile-float {
         0%, 100% {
-          transform: translateY(-16px) rotate(-1deg);
+          transform: translateY(0) rotate(-1deg) scale(1.08);
         }
 
         50% {
-          transform: translateY(-23px) rotate(1.5deg);
+          transform: translateY(-6px) rotate(1.5deg) scale(1.1);
         }
       }
 
       @keyframes flamy-pop {
         0% {
-          transform: translateY(-2px) scale(0.86) rotate(-8deg);
+          transform: translateY(8px) scale(0.94) rotate(-8deg);
         }
 
         72% {
-          transform: translateY(-30px) scale(1.05) rotate(2deg);
+          transform: translateY(-8px) scale(1.13) rotate(2deg);
         }
 
         100% {
-          transform: translateY(-22px) scale(1) rotate(-1deg);
+          transform: translateY(0) scale(1.08) rotate(-1deg);
         }
       }
 
@@ -76,6 +76,20 @@
           box-shadow:
             0 18px 38px rgba(29, 36, 51, 0.22),
             0 0 0 10px rgba(239, 111, 97, 0);
+        }
+      }
+
+      @keyframes flamy-thinking-dragon {
+        0%, 100% {
+          transform: translateY(0) rotate(-1deg) scale(1.08);
+        }
+
+        35% {
+          transform: translateY(-5px) rotate(3deg) scale(1.11);
+        }
+
+        70% {
+          transform: translateY(2px) rotate(-3deg) scale(1.09);
         }
       }
 
@@ -172,7 +186,7 @@
         background: linear-gradient(90deg, #eef7f5, #fffaf4);
       }
 
-      .header img {
+      .avatar-frame {
         position: absolute;
         left: 16px;
         bottom: 8px;
@@ -182,16 +196,29 @@
         object-fit: cover;
         border: 4px solid white;
         box-shadow: 0 18px 38px rgba(29, 36, 51, 0.22);
+        overflow: hidden;
+        transform: translateY(-22px);
+      }
+
+      .avatar-frame img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         animation: flamy-float 4.2s ease-in-out infinite;
         transform-origin: 50% 72%;
       }
 
-      .panel.just-opened .header img {
+      .panel.just-opened .avatar-frame img {
         animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-float 4.2s ease-in-out 560ms infinite;
       }
 
-      .panel.thinking .header img {
-        animation: flamy-float 2.2s ease-in-out infinite, flamy-thinking 1.2s ease-in-out infinite;
+      .panel.thinking .avatar-frame {
+        animation: flamy-thinking 1.2s ease-in-out infinite;
+      }
+
+      .panel.thinking .avatar-frame img {
+        animation: flamy-thinking-dragon 1.35s ease-in-out infinite;
       }
 
       .identity {
@@ -343,27 +370,33 @@
           padding-left: 108px;
         }
 
-        .header img {
+        .avatar-frame {
           width: 92px;
           height: 92px;
           border-radius: 999px;
+          transform: translateY(-16px);
+        }
+
+        .avatar-frame img {
           animation-name: flamy-mobile-float;
         }
 
-        .panel.just-opened .header img {
+        .panel.just-opened .avatar-frame img {
           animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-mobile-float 4.2s ease-in-out 560ms infinite;
         }
 
-        .panel.thinking .header img {
-          animation: flamy-mobile-float 2.2s ease-in-out infinite, flamy-thinking 1.2s ease-in-out infinite;
+        .panel.thinking .avatar-frame img {
+          animation: flamy-thinking-dragon 1.35s ease-in-out infinite;
         }
       }
 
       @media (prefers-reduced-motion: reduce) {
         .launcher,
-        .header img,
-        .panel.just-opened .header img,
-        .panel.thinking .header img {
+        .avatar-frame,
+        .avatar-frame img,
+        .panel.just-opened .avatar-frame img,
+        .panel.thinking .avatar-frame,
+        .panel.thinking .avatar-frame img {
           animation: none;
         }
       }
@@ -371,10 +404,12 @@
 
     <section class="panel" aria-label="Chatbot Flamy" aria-hidden="true">
       <header class="header">
-        <img src="${avatarUrl}" alt="">
+        <span class="avatar-frame" aria-hidden="true">
+          <img src="${avatarUrl}" alt="">
+        </span>
         <div class="identity">
           <strong>Flamy</strong>
-          <small>Dragon magique du CMC</small>
+          <small>Dragon magique du Centre de Magie de la Côte</small>
         </div>
         <button class="close" type="button" aria-label="Fermer Flamy">×</button>
       </header>
