@@ -92,6 +92,52 @@ Centre de Magie de la Côte
 
 Nyon, Suisse
 
+## Coordonnées officielles
+
+Adresse :
+Centre de Magie de la Côte  
+Chemin Falconnier 23  
+1260 Nyon  
+Suisse
+
+E-mail :
+info@magie-lacote.com
+
+Téléphone :
++41 (0)78 926 58 88
+
+Site web :
+https://www.magie-lacote.com
+
+Page de contact :
+https://www.magie-lacote.com/contact
+
+## Accès
+
+L’entrée se fait par la Boutique de Magie, située dans la cour intérieure de l’immeuble.
+
+Depuis la gare de Nyon, il est possible de rejoindre le Centre en empruntant le bus 803, arrêt Petite Prairie, situé à deux pas de l’entrée.
+
+En voiture, plusieurs options existent :
+
+- parking P+R de l’allée de la Petite Prairie, gratuit le week-end ;
+- places payantes ou à disque disponibles le long du chemin Falconnier.
+
+## Horaires d’ouverture
+
+Secrétariat :
+
+- lundi de 10h00 à 12h00 ;
+- mercredi de 10h00 à 12h00 ;
+- vendredi de 10h00 à 12h00.
+
+Boutique :
+
+- ouverture sur rendez-vous ;
+- boutique fermée pendant les vacances scolaires vaudoises.
+
+Les demandes peuvent aussi être envoyées par e-mail à info@magie-lacote.com.
+
 ## Type d’activités
 
 - Cours de magie
@@ -1289,26 +1335,22 @@ Quand une information manque, Flamy doit répondre avec prudence et proposer une
 
 Pour rendre Flamy complètement autonome, il faudra ajouter :
 
-1. Adresse complète du Centre de Magie de la Côte ;
-2. E-mail officiel ;
-3. Téléphone officiel ;
-4. Horaires d’ouverture ;
-5. Liens de réservation ;
-6. Tarifs officiels des anniversaires ;
-7. Tarifs officiels des cours de magie ;
-8. Tarifs officiels des stages ;
-9. Tarifs officiels des escape games ;
-10. Conditions d’annulation ;
-11. Âges minimums exacts par prestation ;
-12. Nombre maximum d’enfants par formule ;
-13. Liste des sites de cours à jour ;
-14. Calendrier officiel des stages ;
-15. Disponibilités connectées au calendrier ;
-16. Formules détaillées pour les anniversaires ;
-17. Formules détaillées pour les escape games ;
-18. Formules entreprises et institutions ;
-19. Procédure interne pour transmettre une demande à l’équipe ;
-20. FAQ complète validée.
+1. Liens de réservation ;
+2. Tarifs officiels des anniversaires ;
+3. Tarifs officiels des cours de magie ;
+4. Tarifs officiels des stages ;
+5. Tarifs officiels des escape games ;
+6. Conditions d’annulation ;
+7. Âges minimums exacts par prestation ;
+8. Nombre maximum d’enfants par formule ;
+9. Liste des sites de cours à jour ;
+10. Calendrier officiel des stages ;
+11. Disponibilités connectées au calendrier ;
+12. Formules détaillées pour les anniversaires ;
+13. Formules détaillées pour les escape games ;
+14. Formules entreprises et institutions ;
+15. Procédure interne pour transmettre une demande à l’équipe ;
+16. FAQ complète validée.
 
 ---
 
@@ -1337,4 +1379,3 @@ L’Equipe du Centre de Magie de la Côte
 # 13. Résumé ultra-court pour moteur RAG
 
 Le Centre de Magie de la Côte est un centre de magie à Nyon proposant cours de magie, stages de vacances, anniversaires magiques, escape games, spectacles, animations pour entreprises et institutions, boutique de magie et pool de magiciens professionnels. Son approche est chaleureuse, professionnelle et bienveillante. Les prestations visent à créer de l’émerveillement tout en développant la confiance, la créativité, l’expression orale et la concentration. Le chatbot Flamy doit répondre avec une touche magique, orienter les clients, collecter les informations nécessaires et ne jamais inventer prix, disponibilités ou détails non confirmés.
-
