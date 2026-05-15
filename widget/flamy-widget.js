@@ -339,10 +339,18 @@
     const message = document.createElement("article");
     message.className = `message ${author === "Flamy" ? "bot" : "user"}`;
     message.innerHTML = `<b>${author}</b><span></span>`;
-    message.querySelector("span").textContent = text;
+    message.querySelector("span").textContent = cleanBotText(text);
     log.append(message);
     log.scrollTop = log.scrollHeight;
     return message;
+  }
+
+  function cleanBotText(text) {
+    return String(text)
+      .replace(/\*\*(.*?)\*\*/g, "$1")
+      .replace(/__(.*?)__/g, "$1")
+      .replace(/^\s*#{1,6}\s+/gm, "")
+      .trim();
   }
 
   function openPanel() {
@@ -376,8 +384,8 @@
       });
       const data = await response.json();
       pending.querySelector("span").textContent =
-        data.answer ||
-        "Je n’ai pas encore cette information dans mon grimoire. L’équipe du Centre pourra vous répondre précisément.";
+        cleanBotText(data.answer ||
+        "Je n’ai pas encore cette information dans mon grimoire. L’équipe du Centre pourra vous répondre précisément.");
     } catch (error) {
       pending.querySelector("span").textContent =
         "Flamy a un souci de connexion. Vous pouvez réessayer dans un instant ou contacter directement l’équipe du Centre.";

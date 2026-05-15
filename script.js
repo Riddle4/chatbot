@@ -65,13 +65,21 @@ function addMessage(author, text, options = {}) {
   label.textContent = author;
 
   const body = document.createElement("span");
-  body.textContent = text;
+  body.textContent = cleanBotText(text);
 
   message.append(label, body);
   chatLog.append(message);
   chatLog.scrollTop = chatLog.scrollHeight;
 
   return message;
+}
+
+function cleanBotText(text) {
+  return String(text)
+    .replace(/\*\*(.*?)\*\*/g, "$1")
+    .replace(/__(.*?)__/g, "$1")
+    .replace(/^\s*#{1,6}\s+/gm, "")
+    .trim();
 }
 
 function findAnswer(question) {
@@ -118,9 +126,9 @@ async function askFlamy(question) {
 
   try {
     const answer = await askOpenAI(trimmed);
-    pending.querySelector("span").textContent = answer;
+    pending.querySelector("span").textContent = cleanBotText(answer);
   } catch (error) {
-    pending.querySelector("span").textContent = findAnswer(trimmed);
+    pending.querySelector("span").textContent = cleanBotText(findAnswer(trimmed));
   } finally {
     delete pending.dataset.pending;
     messageInput.disabled = false;
