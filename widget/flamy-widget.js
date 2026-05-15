@@ -32,22 +32,122 @@
       }
 
       @keyframes flamy-float {
-        0%, 100% {
-          transform: translateY(0) rotate(-1deg) scale(1.08);
+        0%, 8% {
+          opacity: 1;
+          transform: translate(0, 0) rotate(-1deg) scale(1.08);
         }
 
-        50% {
-          transform: translateY(-7px) rotate(1.5deg) scale(1.1);
+        15% {
+          transform: translate(0, -7px) rotate(1.5deg) scale(1.1);
+        }
+
+        24% {
+          transform: translate(0, 3px) rotate(-1deg) scale(1.08);
+        }
+
+        34% {
+          transform: translate(-22px, 10px) rotate(-12deg) scale(1.12);
+        }
+
+        44% {
+          transform: translate(-48px, 28px) rotate(-22deg) scale(1.14);
+        }
+
+        52% {
+          opacity: 1;
+          transform: translate(-78px, 54px) rotate(-28deg) scale(1.16);
+        }
+
+        53% {
+          opacity: 0;
+          transform: translate(-78px, 54px) rotate(-28deg) scale(1.16);
+        }
+
+        58% {
+          opacity: 0;
+          transform: translate(74px, 48px) rotate(24deg) scale(1.14);
+        }
+
+        59% {
+          opacity: 1;
+          transform: translate(74px, 48px) rotate(24deg) scale(1.14);
+        }
+
+        68% {
+          transform: translate(32px, 12px) rotate(14deg) scale(1.12);
+        }
+
+        76% {
+          transform: translate(0, -5px) rotate(368deg) scale(1.08);
+        }
+
+        86% {
+          transform: translate(0, 1px) rotate(359deg) scale(1.08);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translate(0, 0) rotate(359deg) scale(1.08);
         }
       }
 
       @keyframes flamy-mobile-float {
-        0%, 100% {
-          transform: translateY(0) rotate(-1deg) scale(1.08);
+        0%, 8% {
+          opacity: 1;
+          transform: translate(0, 0) rotate(-1deg) scale(1.08);
         }
 
-        50% {
-          transform: translateY(-6px) rotate(1.5deg) scale(1.1);
+        15% {
+          transform: translate(0, -6px) rotate(1.5deg) scale(1.1);
+        }
+
+        24% {
+          transform: translate(0, 2px) rotate(-1deg) scale(1.08);
+        }
+
+        34% {
+          transform: translate(-18px, 9px) rotate(-12deg) scale(1.12);
+        }
+
+        44% {
+          transform: translate(-40px, 24px) rotate(-22deg) scale(1.14);
+        }
+
+        52% {
+          opacity: 1;
+          transform: translate(-66px, 46px) rotate(-28deg) scale(1.16);
+        }
+
+        53% {
+          opacity: 0;
+          transform: translate(-66px, 46px) rotate(-28deg) scale(1.16);
+        }
+
+        58% {
+          opacity: 0;
+          transform: translate(62px, 42px) rotate(24deg) scale(1.14);
+        }
+
+        59% {
+          opacity: 1;
+          transform: translate(62px, 42px) rotate(24deg) scale(1.14);
+        }
+
+        68% {
+          transform: translate(26px, 10px) rotate(14deg) scale(1.12);
+        }
+
+        76% {
+          transform: translate(0, -4px) rotate(368deg) scale(1.08);
+        }
+
+        86% {
+          transform: translate(0, 1px) rotate(359deg) scale(1.08);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translate(0, 0) rotate(359deg) scale(1.08);
         }
       }
 
@@ -81,15 +181,15 @@
 
       @keyframes flamy-thinking-dragon {
         0%, 100% {
-          transform: translateY(0) rotate(-1deg) scale(1.08);
+          transform: translate(0, 0) rotate(-1deg) scale(1.08);
         }
 
         35% {
-          transform: translateY(-5px) rotate(3deg) scale(1.11);
+          transform: translate(0, -5px) rotate(3deg) scale(1.11);
         }
 
         70% {
-          transform: translateY(2px) rotate(-3deg) scale(1.09);
+          transform: translate(0, 2px) rotate(-3deg) scale(1.09);
         }
       }
 
@@ -205,12 +305,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        animation: flamy-float 4.2s ease-in-out infinite;
+        animation: flamy-float 12s ease-in-out infinite;
         transform-origin: 50% 72%;
       }
 
       .panel.just-opened .avatar-frame img {
-        animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-float 4.2s ease-in-out 560ms infinite;
+        animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-float 12s ease-in-out 560ms infinite;
       }
 
       .panel.thinking .avatar-frame {
@@ -382,7 +482,7 @@
         }
 
         .panel.just-opened .avatar-frame img {
-          animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-mobile-float 4.2s ease-in-out 560ms infinite;
+          animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-mobile-float 12s ease-in-out 560ms infinite;
         }
 
         .panel.thinking .avatar-frame img {
