@@ -31,6 +31,64 @@
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
+      @keyframes flamy-float {
+        0%, 100% {
+          transform: translateY(-22px) rotate(-1deg);
+        }
+
+        50% {
+          transform: translateY(-30px) rotate(1.5deg);
+        }
+      }
+
+      @keyframes flamy-mobile-float {
+        0%, 100% {
+          transform: translateY(-16px) rotate(-1deg);
+        }
+
+        50% {
+          transform: translateY(-23px) rotate(1.5deg);
+        }
+      }
+
+      @keyframes flamy-pop {
+        0% {
+          transform: translateY(-2px) scale(0.86) rotate(-8deg);
+        }
+
+        72% {
+          transform: translateY(-30px) scale(1.05) rotate(2deg);
+        }
+
+        100% {
+          transform: translateY(-22px) scale(1) rotate(-1deg);
+        }
+      }
+
+      @keyframes flamy-thinking {
+        0%, 100% {
+          box-shadow:
+            0 18px 38px rgba(29, 36, 51, 0.22),
+            0 0 0 0 rgba(239, 111, 97, 0.26);
+        }
+
+        50% {
+          box-shadow:
+            0 18px 38px rgba(29, 36, 51, 0.22),
+            0 0 0 10px rgba(239, 111, 97, 0);
+        }
+      }
+
+      @keyframes flamy-launcher-breathe {
+        0%, 100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-3px);
+        }
+      }
+
       * {
         box-sizing: border-box;
       }
@@ -57,6 +115,7 @@
         background: linear-gradient(135deg, var(--flamy-teal), var(--flamy-teal-dark));
         box-shadow: 0 18px 42px rgba(17, 78, 73, 0.28);
         cursor: pointer;
+        animation: flamy-launcher-breathe 3.6s ease-in-out infinite;
       }
 
       .launcher img {
@@ -123,7 +182,16 @@
         object-fit: cover;
         border: 4px solid white;
         box-shadow: 0 18px 38px rgba(29, 36, 51, 0.22);
-        transform: translateY(-22px);
+        animation: flamy-float 4.2s ease-in-out infinite;
+        transform-origin: 50% 72%;
+      }
+
+      .panel.just-opened .header img {
+        animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-float 4.2s ease-in-out 560ms infinite;
+      }
+
+      .panel.thinking .header img {
+        animation: flamy-float 2.2s ease-in-out infinite, flamy-thinking 1.2s ease-in-out infinite;
       }
 
       .identity {
@@ -279,7 +347,24 @@
           width: 92px;
           height: 92px;
           border-radius: 999px;
-          transform: translateY(-16px);
+          animation-name: flamy-mobile-float;
+        }
+
+        .panel.just-opened .header img {
+          animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-mobile-float 4.2s ease-in-out 560ms infinite;
+        }
+
+        .panel.thinking .header img {
+          animation: flamy-mobile-float 2.2s ease-in-out infinite, flamy-thinking 1.2s ease-in-out infinite;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .launcher,
+        .header img,
+        .panel.just-opened .header img,
+        .panel.thinking .header img {
+          animation: none;
         }
       }
     </style>
@@ -335,8 +420,10 @@
 
   function openPanel() {
     panel.classList.add("open");
+    panel.classList.add("just-opened");
     panel.setAttribute("aria-hidden", "false");
     launcher.style.display = "none";
+    window.setTimeout(() => panel.classList.remove("just-opened"), 700);
     window.setTimeout(() => input.focus(), 50);
   }
 
@@ -355,6 +442,7 @@
     input.disabled = true;
 
     const pending = addMessage("Flamy", "Flamy consulte son grimoire...");
+    panel.classList.add("thinking");
 
     try {
       const response = await fetch(apiUrl, {
@@ -370,6 +458,7 @@
       pending.querySelector("span").textContent =
         "Flamy a un souci de connexion. Vous pouvez réessayer dans un instant ou contacter directement l’équipe du Centre.";
     } finally {
+      panel.classList.remove("thinking");
       input.disabled = false;
       input.focus();
     }
