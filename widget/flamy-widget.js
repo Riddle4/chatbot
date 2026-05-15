@@ -34,134 +34,134 @@
       @keyframes flamy-float {
         0%, 8% {
           opacity: 1;
-          transform: translate(0, 0) rotate(-1deg) scale(1.08);
+          transform: translate(0, 0) rotate(-1deg) scale(0.88);
         }
 
         15% {
-          transform: translate(0, -7px) rotate(1.5deg) scale(1.1);
+          transform: translate(0, -7px) rotate(1.5deg) scale(0.9);
         }
 
         24% {
-          transform: translate(0, 3px) rotate(-1deg) scale(1.08);
+          transform: translate(0, 3px) rotate(-1deg) scale(0.88);
         }
 
         34% {
-          transform: translate(-22px, 10px) rotate(-12deg) scale(1.12);
+          transform: translate(-22px, 10px) rotate(-12deg) scale(0.92);
         }
 
         44% {
-          transform: translate(-48px, 28px) rotate(-22deg) scale(1.14);
+          transform: translate(-48px, 28px) rotate(-22deg) scale(0.78);
         }
 
         52% {
           opacity: 1;
-          transform: translate(-78px, 54px) rotate(-28deg) scale(1.16);
+          transform: translate(-78px, 54px) rotate(-28deg) scale(0.96);
         }
 
         53% {
           opacity: 0;
-          transform: translate(-78px, 54px) rotate(-28deg) scale(1.16);
+          transform: translate(-78px, 54px) rotate(-28deg) scale(0.96);
         }
 
         58% {
           opacity: 0;
-          transform: translate(74px, 48px) rotate(24deg) scale(1.14);
+          transform: translate(74px, 48px) rotate(24deg) scale(0.78);
         }
 
         59% {
           opacity: 1;
-          transform: translate(74px, 48px) rotate(24deg) scale(1.14);
+          transform: translate(74px, 48px) rotate(24deg) scale(0.78);
         }
 
         68% {
-          transform: translate(32px, 12px) rotate(14deg) scale(1.12);
+          transform: translate(32px, 12px) rotate(14deg) scale(0.92);
         }
 
         76% {
-          transform: translate(0, -5px) rotate(368deg) scale(1.08);
+          transform: translate(0, -5px) rotate(368deg) scale(0.88);
         }
 
         86% {
-          transform: translate(0, 1px) rotate(359deg) scale(1.08);
+          transform: translate(0, 1px) rotate(359deg) scale(0.88);
         }
 
         100% {
           opacity: 1;
-          transform: translate(0, 0) rotate(359deg) scale(1.08);
+          transform: translate(0, 0) rotate(359deg) scale(0.88);
         }
       }
 
       @keyframes flamy-mobile-float {
         0%, 8% {
           opacity: 1;
-          transform: translate(0, 0) rotate(-1deg) scale(1.08);
+          transform: translate(0, 0) rotate(-1deg) scale(0.88);
         }
 
         15% {
-          transform: translate(0, -6px) rotate(1.5deg) scale(1.1);
+          transform: translate(0, -6px) rotate(1.5deg) scale(0.9);
         }
 
         24% {
-          transform: translate(0, 2px) rotate(-1deg) scale(1.08);
+          transform: translate(0, 2px) rotate(-1deg) scale(0.88);
         }
 
         34% {
-          transform: translate(-18px, 9px) rotate(-12deg) scale(1.12);
+          transform: translate(-18px, 9px) rotate(-12deg) scale(0.92);
         }
 
         44% {
-          transform: translate(-40px, 24px) rotate(-22deg) scale(1.14);
+          transform: translate(-40px, 24px) rotate(-22deg) scale(0.78);
         }
 
         52% {
           opacity: 1;
-          transform: translate(-66px, 46px) rotate(-28deg) scale(1.16);
+          transform: translate(-66px, 46px) rotate(-28deg) scale(0.96);
         }
 
         53% {
           opacity: 0;
-          transform: translate(-66px, 46px) rotate(-28deg) scale(1.16);
+          transform: translate(-66px, 46px) rotate(-28deg) scale(0.96);
         }
 
         58% {
           opacity: 0;
-          transform: translate(62px, 42px) rotate(24deg) scale(1.14);
+          transform: translate(62px, 42px) rotate(24deg) scale(0.78);
         }
 
         59% {
           opacity: 1;
-          transform: translate(62px, 42px) rotate(24deg) scale(1.14);
+          transform: translate(62px, 42px) rotate(24deg) scale(0.78);
         }
 
         68% {
-          transform: translate(26px, 10px) rotate(14deg) scale(1.12);
+          transform: translate(26px, 10px) rotate(14deg) scale(0.92);
         }
 
         76% {
-          transform: translate(0, -4px) rotate(368deg) scale(1.08);
+          transform: translate(0, -4px) rotate(368deg) scale(0.88);
         }
 
         86% {
-          transform: translate(0, 1px) rotate(359deg) scale(1.08);
+          transform: translate(0, 1px) rotate(359deg) scale(0.88);
         }
 
         100% {
           opacity: 1;
-          transform: translate(0, 0) rotate(359deg) scale(1.08);
+          transform: translate(0, 0) rotate(359deg) scale(0.88);
         }
       }
 
       @keyframes flamy-pop {
         0% {
-          transform: translateY(8px) scale(0.94) rotate(-8deg);
+          transform: translateY(8px) scale(0.78) rotate(-8deg);
         }
 
         72% {
-          transform: translateY(-8px) scale(1.13) rotate(2deg);
+          transform: translateY(-8px) scale(0.93) rotate(2deg);
         }
 
         100% {
-          transform: translateY(0) scale(1.08) rotate(-1deg);
+          transform: translateY(0) scale(0.88) rotate(-1deg);
         }
       }
 
@@ -181,15 +181,15 @@
 
       @keyframes flamy-thinking-dragon {
         0%, 100% {
-          transform: translate(0, 0) rotate(-1deg) scale(1.08);
+          transform: translate(0, 0) rotate(-1deg) scale(0.88);
         }
 
         35% {
-          transform: translate(0, -5px) rotate(3deg) scale(1.11);
+          transform: translate(0, -5px) rotate(3deg) scale(0.91);
         }
 
         70% {
-          transform: translate(0, 2px) rotate(-3deg) scale(1.09);
+          transform: translate(0, 2px) rotate(-3deg) scale(0.89);
         }
       }
 
@@ -235,7 +235,7 @@
       .launcher img {
         width: 42px;
         height: 42px;
-        border-radius: 8px;
+        border-radius: 999px;
         object-fit: cover;
         border: 2px solid rgba(255, 255, 255, 0.8);
       }
@@ -293,8 +293,8 @@
         width: 108px;
         height: 108px;
         border-radius: 999px;
-        object-fit: cover;
         border: 4px solid white;
+        background: #fffaf4;
         box-shadow: 0 18px 38px rgba(29, 36, 51, 0.22);
         overflow: hidden;
         transform: translateY(-22px);
