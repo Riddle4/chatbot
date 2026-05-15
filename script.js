@@ -65,7 +65,7 @@ function addMessage(author, text, options = {}) {
   label.textContent = author;
 
   const body = document.createElement("span");
-  body.textContent = cleanBotText(text);
+  appendLinkedText(body, cleanBotText(text));
 
   message.append(label, body);
   chatLog.append(message);
@@ -80,6 +80,36 @@ function cleanBotText(text) {
     .replace(/__(.*?)__/g, "$1")
     .replace(/^\s*#{1,6}\s+/gm, "")
     .trim();
+}
+
+function appendLinkedText(target, text) {
+  const pattern = /https?:\/\/[^\s<>"')]+/g;
+  let cursor = 0;
+  let match;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > cursor) {
+      target.append(document.createTextNode(text.slice(cursor, match.index)));
+    }
+
+    const link = document.createElement("a");
+    link.href = match[0];
+    link.textContent = match[0];
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    target.append(link);
+    cursor = match.index + match[0].length;
+  }
+
+  if (cursor < text.length) {
+    target.append(document.createTextNode(text.slice(cursor)));
+  }
+}
+
+function setMessageText(message, text) {
+  const body = message.querySelector("span");
+  body.textContent = "";
+  appendLinkedText(body, cleanBotText(text));
 }
 
 function findAnswer(question) {
@@ -126,9 +156,9 @@ async function askFlamy(question) {
 
   try {
     const answer = await askOpenAI(trimmed);
-    pending.querySelector("span").textContent = cleanBotText(answer);
+    setMessageText(pending, answer);
   } catch (error) {
-    pending.querySelector("span").textContent = cleanBotText(findAnswer(trimmed));
+    setMessageText(pending, findAnswer(trimmed));
   } finally {
     delete pending.dataset.pending;
     messageInput.disabled = false;

@@ -209,6 +209,16 @@
         font-size: 0.78rem;
       }
 
+      .message a {
+        color: var(--flamy-teal);
+        font-weight: 800;
+        overflow-wrap: anywhere;
+      }
+
+      .message.user a {
+        color: white;
+      }
+
       .quick {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -339,8 +349,11 @@
   function addMessage(author, text) {
     const message = document.createElement("article");
     message.className = `message ${author === "Flamy" ? "bot" : "user"}`;
-    message.innerHTML = `<b>${author}</b><span></span>`;
-    message.querySelector("span").textContent = cleanBotText(text);
+    const label = document.createElement("b");
+    label.textContent = author;
+    const body = document.createElement("span");
+    appendLinkedText(body, cleanBotText(text));
+    message.append(label, body);
     log.append(message);
     log.scrollTop = log.scrollHeight;
     return message;
@@ -352,6 +365,36 @@
       .replace(/__(.*?)__/g, "$1")
       .replace(/^\s*#{1,6}\s+/gm, "")
       .trim();
+  }
+
+  function appendLinkedText(target, text) {
+    const pattern = /https?:\/\/[^\s<>"')]+/g;
+    let cursor = 0;
+    let match;
+
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > cursor) {
+        target.append(document.createTextNode(text.slice(cursor, match.index)));
+      }
+
+      const link = document.createElement("a");
+      link.href = match[0];
+      link.textContent = match[0];
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      target.append(link);
+      cursor = match.index + match[0].length;
+    }
+
+    if (cursor < text.length) {
+      target.append(document.createTextNode(text.slice(cursor)));
+    }
+  }
+
+  function setMessageText(message, text) {
+    const body = message.querySelector("span");
+    body.textContent = "";
+    appendLinkedText(body, cleanBotText(text));
   }
 
   function openPanel() {
@@ -384,12 +427,16 @@
         body: JSON.stringify({ message: trimmed })
       });
       const data = await response.json();
-      pending.querySelector("span").textContent =
-        cleanBotText(data.answer ||
-        "Je n’ai pas encore cette information dans mon grimoire. L’équipe du Centre pourra vous répondre précisément.");
+      setMessageText(
+        pending,
+        data.answer ||
+          "Je n’ai pas encore cette information dans mon grimoire. L’équipe du Centre pourra vous répondre précisément."
+      );
     } catch (error) {
-      pending.querySelector("span").textContent =
-        "Flamy a un souci de connexion. Vous pouvez réessayer dans un instant ou contacter directement l’équipe du Centre.";
+      setMessageText(
+        pending,
+        "Flamy a un souci de connexion. Vous pouvez réessayer dans un instant ou contacter directement l’équipe du Centre."
+      );
     } finally {
       input.disabled = false;
       input.focus();

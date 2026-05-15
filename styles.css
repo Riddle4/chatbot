@@ -194,6 +194,16 @@ h1 {
   font-size: 0.82rem;
 }
 
+.message a {
+  color: var(--teal);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.message.user a {
+  color: white;
+}
+
 .quick-actions {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
