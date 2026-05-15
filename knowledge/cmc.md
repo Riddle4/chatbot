@@ -545,6 +545,13 @@ Le stage de magie de Pâques permet aux enfants et adolescents de passer plusieu
 
 Le stage est adapté aux débutants comme aux enfants ayant déjà suivi des cours ou participé à d’autres stages.
 
+### Information et inscription
+
+Pour découvrir les stages et ateliers de magie, le client doit consulter la page :
+https://www.magie-lacote.com/stageetateliersdemagiecmc
+
+Flamy doit donner ce lien lorsqu’un client demande des informations sur les stages, les ateliers de vacances, les stages d’été, les stages de Pâques ou les stages Halloween.
+
 ### Cible
 
 Enfants et adolescents pendant les vacances scolaires de Pâques.
@@ -591,6 +598,13 @@ Les stages d’été du Centre de Magie de la Côte accueillent les enfants et a
 Les stages sont pensés pour les débutants, les enfants ayant déjà participé à un stage, ainsi que les jeunes magiciens plus avancés. L’ambiance est ludique, bienveillante et stimulante.
 
 Des photos et vidéos peuvent être partagées avec les parents selon l’organisation prévue.
+
+### Information et inscription
+
+Pour découvrir les stages et ateliers de magie, le client doit consulter la page :
+https://www.magie-lacote.com/stageetateliersdemagiecmc
+
+Flamy doit inviter le client à consulter cette page pour les informations à jour et les inscriptions.
 
 ### Sessions connues pour l’été 2026
 
@@ -664,6 +678,11 @@ Un stage de magie pendant les vacances d’automne, dans une ambiance mystérieu
 ### Description longue
 
 Le stage de magie de Halloween propose aux enfants une immersion dans un univers magique et mystérieux. Les participants apprennent des tours, relèvent des défis, participent à des activités créatives et vivent une expérience adaptée à la période d’Halloween.
+
+### Information et inscription
+
+Pour découvrir les stages et ateliers de magie, le client doit consulter la page :
+https://www.magie-lacote.com/stageetateliersdemagiecmc
 
 ### Cible
 
@@ -1153,11 +1172,10 @@ Flamy doit :
 
 ### Pour un stage
 
-- prénom et âge de l’enfant ;
-- semaine souhaitée ;
-- niveau éventuel ;
-- coordonnées des parents ;
-- besoins particuliers éventuels.
+Flamy doit présenter brièvement les stages puis rediriger vers la page :
+https://www.magie-lacote.com/stageetateliersdemagiecmc
+
+Il peut préciser que cette page permet de découvrir les stages et ateliers de magie, les périodes proposées et les informations utiles.
 
 ### Pour une entreprise ou institution
 
@@ -1303,7 +1321,7 @@ Flamy ne doit pas dire : « je vais transmettre », « je fais suivre » ou « j
 
 ### Réponse recommandée
 Oui ✨  
-Nous proposons des stages de magie pendant l’été à Nyon. Les enfants y apprennent des tours de magie, participent à des jeux et défis, et vivent une semaine dans une ambiance magique, bienveillante et stimulante.
+Nous proposons des stages et ateliers de magie pendant les vacances. Les enfants y apprennent des tours de magie, participent à des jeux et défis, développent leur confiance en eux et vivent une expérience magique dans un cadre bienveillant.
 
 Pour l’été 2026, les semaines prévues sont à vérifier, mais les sessions connues sont :
 
@@ -1313,7 +1331,10 @@ Pour l’été 2026, les semaines prévues sont à vérifier, mais les sessions 
 - 3 au 7 août ;
 - 10 au 14 août.
 
-Les stages sont généralement proposés de 9h00 à 17h00, pour les enfants et adolescents de 6 à 16 ans. Je peux transmettre votre demande à l’équipe pour vérifier les disponibilités et les inscriptions.
+Les stages sont généralement proposés de 9h00 à 17h00, pour les enfants et adolescents de 6 à 16 ans.
+
+Pour découvrir les stages, ateliers, périodes proposées et informations à jour, consultez la page :
+https://www.magie-lacote.com/stageetateliersdemagiecmc
 
 ---
 

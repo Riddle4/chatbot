@@ -211,7 +211,7 @@
 
       .quick {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 8px;
         padding: 10px 12px;
         border-top: 1px solid var(--flamy-line);
@@ -310,6 +310,7 @@
         <button type="button" data-question="Je souhaite organiser un anniversaire magique">Anniversaire</button>
         <button type="button" data-question="Quels cours de magie proposez-vous ?">Cours</button>
         <button type="button" data-question="Quels escape games proposez-vous ?">Escape games</button>
+        <button type="button" data-question="Quels stages de magie proposez-vous ?">Stage</button>
         <button type="button" data-question="Comment puis-je vous contacter ?">Contact</button>
       </div>
       <form>
