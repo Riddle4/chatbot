@@ -31,178 +31,6 @@
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
 
-      @keyframes flamy-float {
-        0%, 8% {
-          opacity: 1;
-          transform: translate(0, 0) rotate(-1deg) scale(0.88);
-        }
-
-        15% {
-          transform: translate(0, -7px) rotate(1.5deg) scale(0.9);
-        }
-
-        24% {
-          transform: translate(0, 3px) rotate(-1deg) scale(0.88);
-        }
-
-        34% {
-          transform: translate(-22px, 10px) rotate(-12deg) scale(0.92);
-        }
-
-        44% {
-          transform: translate(-48px, 28px) rotate(-22deg) scale(0.78);
-        }
-
-        52% {
-          opacity: 1;
-          transform: translate(-78px, 54px) rotate(-28deg) scale(0.96);
-        }
-
-        53% {
-          opacity: 0;
-          transform: translate(-78px, 54px) rotate(-28deg) scale(0.96);
-        }
-
-        58% {
-          opacity: 0;
-          transform: translate(74px, 48px) rotate(24deg) scale(0.78);
-        }
-
-        59% {
-          opacity: 1;
-          transform: translate(74px, 48px) rotate(24deg) scale(0.78);
-        }
-
-        68% {
-          transform: translate(32px, 12px) rotate(14deg) scale(0.92);
-        }
-
-        76% {
-          transform: translate(0, -5px) rotate(368deg) scale(0.88);
-        }
-
-        86% {
-          transform: translate(0, 1px) rotate(359deg) scale(0.88);
-        }
-
-        100% {
-          opacity: 1;
-          transform: translate(0, 0) rotate(359deg) scale(0.88);
-        }
-      }
-
-      @keyframes flamy-mobile-float {
-        0%, 8% {
-          opacity: 1;
-          transform: translate(0, 0) rotate(-1deg) scale(0.88);
-        }
-
-        15% {
-          transform: translate(0, -6px) rotate(1.5deg) scale(0.9);
-        }
-
-        24% {
-          transform: translate(0, 2px) rotate(-1deg) scale(0.88);
-        }
-
-        34% {
-          transform: translate(-18px, 9px) rotate(-12deg) scale(0.92);
-        }
-
-        44% {
-          transform: translate(-40px, 24px) rotate(-22deg) scale(0.78);
-        }
-
-        52% {
-          opacity: 1;
-          transform: translate(-66px, 46px) rotate(-28deg) scale(0.96);
-        }
-
-        53% {
-          opacity: 0;
-          transform: translate(-66px, 46px) rotate(-28deg) scale(0.96);
-        }
-
-        58% {
-          opacity: 0;
-          transform: translate(62px, 42px) rotate(24deg) scale(0.78);
-        }
-
-        59% {
-          opacity: 1;
-          transform: translate(62px, 42px) rotate(24deg) scale(0.78);
-        }
-
-        68% {
-          transform: translate(26px, 10px) rotate(14deg) scale(0.92);
-        }
-
-        76% {
-          transform: translate(0, -4px) rotate(368deg) scale(0.88);
-        }
-
-        86% {
-          transform: translate(0, 1px) rotate(359deg) scale(0.88);
-        }
-
-        100% {
-          opacity: 1;
-          transform: translate(0, 0) rotate(359deg) scale(0.88);
-        }
-      }
-
-      @keyframes flamy-pop {
-        0% {
-          transform: translateY(8px) scale(0.78) rotate(-8deg);
-        }
-
-        72% {
-          transform: translateY(-8px) scale(0.93) rotate(2deg);
-        }
-
-        100% {
-          transform: translateY(0) scale(0.88) rotate(-1deg);
-        }
-      }
-
-      @keyframes flamy-thinking {
-        0%, 100% {
-          box-shadow:
-            0 18px 38px rgba(29, 36, 51, 0.22),
-            0 0 0 0 rgba(239, 111, 97, 0.26);
-        }
-
-        50% {
-          box-shadow:
-            0 18px 38px rgba(29, 36, 51, 0.22),
-            0 0 0 10px rgba(239, 111, 97, 0);
-        }
-      }
-
-      @keyframes flamy-thinking-dragon {
-        0%, 100% {
-          transform: translate(0, 0) rotate(-1deg) scale(0.88);
-        }
-
-        35% {
-          transform: translate(0, -5px) rotate(3deg) scale(0.91);
-        }
-
-        70% {
-          transform: translate(0, 2px) rotate(-3deg) scale(0.89);
-        }
-      }
-
-      @keyframes flamy-launcher-breathe {
-        0%, 100% {
-          transform: translateY(0);
-        }
-
-        50% {
-          transform: translateY(-3px);
-        }
-      }
-
       * {
         box-sizing: border-box;
       }
@@ -229,7 +57,6 @@
         background: linear-gradient(135deg, var(--flamy-teal), var(--flamy-teal-dark));
         box-shadow: 0 18px 42px rgba(17, 78, 73, 0.28);
         cursor: pointer;
-        animation: flamy-launcher-breathe 3.6s ease-in-out infinite;
       }
 
       .launcher img {
@@ -305,20 +132,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        animation: flamy-float 12s ease-in-out infinite;
         transform-origin: 50% 72%;
-      }
-
-      .panel.just-opened .avatar-frame img {
-        animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-float 12s ease-in-out 560ms infinite;
-      }
-
-      .panel.thinking .avatar-frame {
-        animation: flamy-thinking 1.2s ease-in-out infinite;
-      }
-
-      .panel.thinking .avatar-frame img {
-        animation: flamy-thinking-dragon 1.35s ease-in-out infinite;
       }
 
       .identity {
@@ -477,28 +291,6 @@
           transform: translateY(-16px);
         }
 
-        .avatar-frame img {
-          animation-name: flamy-mobile-float;
-        }
-
-        .panel.just-opened .avatar-frame img {
-          animation: flamy-pop 520ms cubic-bezier(0.2, 0.8, 0.25, 1.18), flamy-mobile-float 12s ease-in-out 560ms infinite;
-        }
-
-        .panel.thinking .avatar-frame img {
-          animation: flamy-thinking-dragon 1.35s ease-in-out infinite;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .launcher,
-        .avatar-frame,
-        .avatar-frame img,
-        .panel.just-opened .avatar-frame img,
-        .panel.thinking .avatar-frame,
-        .panel.thinking .avatar-frame img {
-          animation: none;
-        }
       }
     </style>
 
@@ -555,10 +347,8 @@
 
   function openPanel() {
     panel.classList.add("open");
-    panel.classList.add("just-opened");
     panel.setAttribute("aria-hidden", "false");
     launcher.style.display = "none";
-    window.setTimeout(() => panel.classList.remove("just-opened"), 700);
     window.setTimeout(() => input.focus(), 50);
   }
 
@@ -577,7 +367,6 @@
     input.disabled = true;
 
     const pending = addMessage("Flamy", "Flamy consulte son grimoire...");
-    panel.classList.add("thinking");
 
     try {
       const response = await fetch(apiUrl, {
@@ -593,7 +382,6 @@
       pending.querySelector("span").textContent =
         "Flamy a un souci de connexion. Vous pouvez réessayer dans un instant ou contacter directement l’équipe du Centre.";
     } finally {
-      panel.classList.remove("thinking");
       input.disabled = false;
       input.focus();
     }
