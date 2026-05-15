@@ -83,7 +83,7 @@ function cleanBotText(text) {
 }
 
 function appendLinkedText(target, text) {
-  const pattern = /https?:\/\/[^\s<>"')]+/g;
+  const pattern = /(https?:\/\/[^\s<>"')]+)|([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,})/gi;
   let cursor = 0;
   let match;
 
@@ -93,10 +93,12 @@ function appendLinkedText(target, text) {
     }
 
     const link = document.createElement("a");
-    link.href = match[0];
+    link.href = match[1] ? match[0] : `mailto:${match[0]}`;
     link.textContent = match[0];
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
+    if (match[1]) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
     target.append(link);
     cursor = match.index + match[0].length;
   }
