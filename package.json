@@ -1,0 +1,12 @@
+{
+  "name": "chatbot-cmc-flamy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chatbot Flamy pour le Centre de Magie de la Cote",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

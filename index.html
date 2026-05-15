@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flamy - Centre de Magie de la Côte</title>
+    <meta
+      name="description"
+      content="Chatbot Flamy pour aider les visiteurs du Centre de Magie de la Côte à trouver rapidement les réponses à leurs questions."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="brand-panel" aria-label="Centre de Magie de la Côte">
+        <div class="brand-copy">
+          <p class="eyebrow">Centre de Magie de la Côte</p>
+          <h1>Flamy répond aux questions des visiteurs</h1>
+          <p>
+            Un assistant chaleureux pour orienter les familles, les élèves et
+            les curieux vers les cours, spectacles, anniversaires et infos
+            pratiques.
+          </p>
+        </div>
+        <div class="flamy-card" aria-hidden="true">
+          <img src="assets/flamy.png" alt="">
+          <div>
+            <strong>Flamy</strong>
+            <span>Dragon magique du CMC</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-panel" aria-label="Chatbot Flamy">
+        <header class="chat-header">
+          <img class="avatar" src="assets/flamy.png" alt="Portrait de Flamy">
+          <div>
+            <p>Flamy</p>
+            <span>En ligne pour vous aider</span>
+          </div>
+        </header>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <div class="quick-actions" aria-label="Questions rapides">
+          <button type="button" data-question="Quels cours proposez-vous ?">Cours</button>
+          <button type="button" data-question="Est-ce possible pour un anniversaire ?">Anniversaires</button>
+          <button type="button" data-question="Comment puis-je vous contacter ?">Contact</button>
+          <button type="button" data-question="Quels sont les tarifs ?">Tarifs</button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <label class="sr-only" for="messageInput">Votre question</label>
+          <input
+            id="messageInput"
+            name="message"
+            type="text"
+            autocomplete="off"
+            placeholder="Posez votre question à Flamy..."
+            required
+          >
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
