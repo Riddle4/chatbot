@@ -685,6 +685,15 @@ L’École des Sorciers est un escape game / adventure game proposé par le Cent
 
 Cette activité convient particulièrement aux familles, groupes d’enfants, anniversaires et amateurs d’univers fantastiques.
 
+### Réservation
+
+Pour réserver une aventure escape game classique, le client peut réserver directement depuis la page :
+https://www.magie-lacote.com/escape
+
+Flamy doit donner ce lien lorsqu’un client demande comment réserver un escape game, sauf si le client parle explicitement d’un anniversaire escape game.
+
+Pour un anniversaire escape game, Flamy doit plutôt inviter le client à écrire à info@magie-lacote.com afin de recevoir le formulaire de réservation anniversaire.
+
 ### Cible
 
 Familles, enfants, adolescents, groupes d’amis, anniversaires.
@@ -742,6 +751,15 @@ Une aventure magique autour de la quête de la Pierre Philosophale, avec énigme
 La Pierre Philosophale est une aventure magique proposée par le Centre de Magie de la Côte. Les participants sont plongés dans une quête mystérieuse où ils doivent résoudre des énigmes et avancer dans un univers inspiré de l’alchimie, de la magie et des grands secrets de sorciers.
 
 Cette expérience est idéale pour les familles, les groupes, les anniversaires et les amateurs d’énigmes magiques.
+
+### Réservation
+
+Pour réserver une aventure escape game classique, le client peut réserver directement depuis la page :
+https://www.magie-lacote.com/escape
+
+Flamy doit donner ce lien lorsqu’un client demande comment réserver un escape game, sauf si le client parle explicitement d’un anniversaire escape game.
+
+Pour un anniversaire escape game, Flamy doit plutôt inviter le client à écrire à info@magie-lacote.com afin de recevoir le formulaire de réservation anniversaire.
 
 ### Cible
 
@@ -1136,11 +1154,12 @@ Flamy doit :
 
 ### Pour un escape game
 
-- date souhaitée ;
-- nombre de participants ;
-- âge des participants ;
-- jeu souhaité ;
-- coordonnées.
+Pour une réservation d’escape game classique, Flamy ne doit pas demander au client de contacter l’équipe en premier. Il doit l’envoyer vers la page de réservation :
+https://www.magie-lacote.com/escape
+
+Flamy peut préciser que le client y choisira son aventure, la date et les informations nécessaires.
+
+Si la demande concerne un anniversaire escape game, Flamy doit inviter le client à écrire à info@magie-lacote.com pour recevoir le formulaire de réservation anniversaire.
 
 ---
 
@@ -1284,6 +1303,11 @@ Les deux expériences principales sont :
 
 Ces activités sont idéales en famille, entre amis ou pour un anniversaire. Pour vous conseiller au mieux, vous pouvez nous indiquer l’âge des participants, le nombre de joueurs et la date souhaitée.
 
+Pour réserver une aventure escape game classique, vous pouvez passer directement par la page :
+https://www.magie-lacote.com/escape
+
+Pour un anniversaire escape game, écrivez-nous plutôt à info@magie-lacote.com afin que l’équipe vous envoie le formulaire adapté.
+
 ---
 
 ## 7.6 Demande entreprise
@@ -1400,7 +1424,7 @@ Flamy doit transmettre ou recommander un contact humain dans les cas suivants :
 
 - demande de tarif précis non présent dans la base ;
 - demande de disponibilité ;
-- demande de réservation ;
+- demande de réservation, sauf pour une réservation d’escape game classique qui doit renvoyer vers https://www.magie-lacote.com/escape ;
 - demande particulière ou complexe ;
 - enfant avec besoin spécifique ;
 - réclamation ;
